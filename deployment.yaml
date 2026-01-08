@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: argo-demo
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: argo-demo
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: shubhamdoc0705/my-project:v1
+        image: shubhamdoc0705/my-project:v45
         ports:
-        - containerPort: 3000
+        - containerPort: 5000
