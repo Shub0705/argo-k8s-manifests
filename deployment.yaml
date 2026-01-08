@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: argo-demo
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: argo-demo
